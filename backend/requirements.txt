@@ -1,0 +1,15 @@
+# StegoCrypt Backend Dependencies
+
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Image processing
+Pillow==10.1.0
+
+# Cryptography
+pycryptodome==3.19.0
+
+# Utilities
+python-dotenv==1.0.0
