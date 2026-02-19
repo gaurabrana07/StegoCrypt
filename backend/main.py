@@ -19,7 +19,11 @@ app = FastAPI(
 # CORS configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify exact origins
+    allow_origins=[
+        "https://stego-crypt-tau.vercel.app",  # Production frontend
+        "http://localhost:3000",  # Local development
+        "http://localhost:5173"   # Vite default port
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
